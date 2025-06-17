@@ -4,13 +4,18 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
+patchedDependencies:
+  issue-status:
+    hash: qrlo4kbhvgzueqsyb5tmg2km7q
+    path: patches/issue-status.patch
+
 importers:
 
   .:
     dependencies:
       issue-status:
         specifier: ^0.0.27
-        version: 0.0.27(@types/react@19.1.8)(jiti@2.4.2)(lightningcss@1.30.1)
+        version: 0.0.27(patch_hash=qrlo4kbhvgzueqsyb5tmg2km7q)(@types/react@19.1.8)(jiti@2.4.2)(lightningcss@1.30.1)
     devDependencies:
       gh-pages:
         specifier: ^6.3.0
@@ -2381,7 +2386,7 @@ snapshots:
 
   is-plain-obj@4.1.0: {}
 
-  issue-status@0.0.27(@types/react@19.1.8)(jiti@2.4.2)(lightningcss@1.30.1):
+  issue-status@0.0.27(patch_hash=qrlo4kbhvgzueqsyb5tmg2km7q)(@types/react@19.1.8)(jiti@2.4.2)(lightningcss@1.30.1):
     dependencies:
       '@inquirer/prompts': 7.5.3
       '@octokit/rest': 22.0.0
